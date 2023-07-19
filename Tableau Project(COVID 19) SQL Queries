@@ -16,6 +16,7 @@ group by dea.continent, dea.location, dea.date, dea.population
 order by 1,2,3
 
 
+
 -- 2.
 Select SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
 From ProjectA..CovidDeaths
